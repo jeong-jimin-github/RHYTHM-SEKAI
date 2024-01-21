@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SimpleSpectrum/Demos/Demo_Main.unity
+    guid: ef15545280b1cad4fbf2aa7b9450a083
+  - enabled: 1
     path: Assets/Scenes/Select.unity
     guid: 20e3cea09b6d71a418df1ff1d9f49325
   - enabled: 1

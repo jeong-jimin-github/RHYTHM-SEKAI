@@ -17,7 +17,7 @@ public class MusicManager : MonoBehaviour
         start = 1f;
         audioPlayer = GetComponent<LocalAudioPlayer>();
         audioPlayer.AddSound(clip);
-        audioPlayer.PlayDelayed("Music", 1.6f);
+        audioPlayer.PlayDelayed("Music", 1.7f);
     }
 
     void Update()
