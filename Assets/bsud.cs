@@ -18,7 +18,13 @@ public class bsud : MonoBehaviour
 
     void up()
     {
-        bes.text = (Int32.Parse(bes.text) + 1).ToString();
+        if (Int32.Parse(bes.text) >= 30)
+        {
+        }
+        else
+        {
+            bes.text = (Int32.Parse(bes.text) + 1).ToString();
+        }
     }
     void down()
     {

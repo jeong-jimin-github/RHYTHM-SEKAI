@@ -51,15 +51,16 @@ public class NoteGen : MonoBehaviour
         {
             // 롱노트 생성 및 추가 로직
             // 여기서 endTime을 설정하거나, 다른 조작을 수행할 수 있습니다.
+            int endoff = GameObject.Find("besok").GetComponent<besok>().bsesok / 15;
             GameObject newNote = Instantiate(note, new Vector3(note_x, 30), Quaternion.identity);
             GameObject longNoteTailObject = Instantiate(lonen, new Vector3(note_x, 30), Quaternion.identity);
             longNoteTailObject.transform.parent = newNote.transform;
             longNoteTailObject.transform.localPosition = new Vector3(0f, end*1.8f, 0f);
-            longNoteTailObject.transform.localScale = new Vector3(0.5f, end, 1f);
-            for (int i = 1; i <= end; i++) {
+            longNoteTailObject.transform.localScale = new Vector3(0.5f, end * endoff, 1f);
+            for (int i = 1; i <= end; i+=2) {
                 GameObject longNote = Instantiate(tn, new Vector3(note_x, 30), Quaternion.identity);
                 longNote.transform.parent = newNote.transform;
-                longNote.transform.localPosition = new Vector3(0f, i * 3.5f, 0f);
+                longNote.transform.localPosition = new Vector3(0f, i * endoff * 3.5f, 0f);
             }
             // 추가 로직...
         }
