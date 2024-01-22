@@ -55,7 +55,7 @@ public class NoteGen : MonoBehaviour
             GameObject newNote = Instantiate(note, new Vector3(note_x, 30), Quaternion.identity);
             GameObject longNoteTailObject = Instantiate(lonen, new Vector3(note_x, 30), Quaternion.identity);
             longNoteTailObject.transform.parent = newNote.transform;
-            longNoteTailObject.transform.localPosition = new Vector3(0f, end*1.8f, 0f);
+            longNoteTailObject.transform.localPosition = new Vector3(0f, end * endoff * 1.8f, 0f);
             longNoteTailObject.transform.localScale = new Vector3(0.5f, end * endoff, 1f);
             for (int i = 1; i <= end; i+=2) {
                 GameObject longNote = Instantiate(tn, new Vector3(note_x, 30), Quaternion.identity);
