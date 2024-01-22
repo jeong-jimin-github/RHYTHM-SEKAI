@@ -1,5 +1,5 @@
 ## 모바일 리듬 게임
-곡 목록
+곡 목록<br>
 Orangestar - アスノヨゾラ哨戒班
 
 ![image](https://github.com/jeong-jimin-github/RHYTHM-SEKAI/assets/95138574/c4128903-de35-4221-9a1b-e818c778d900)
