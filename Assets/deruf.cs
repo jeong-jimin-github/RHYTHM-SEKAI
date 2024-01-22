@@ -33,7 +33,7 @@ public class deruf : MonoBehaviour
             // set color with i as alpha
             image.color = new Color(0, 0, 0, i);
             print(i);
-            if (i>=0.99)                        //만약 판넬 이미지 알파 값이 0보다 작으면
+            if (i>=0.9)                        //만약 판넬 이미지 알파 값이 0보다 작으면
 
                 {
               

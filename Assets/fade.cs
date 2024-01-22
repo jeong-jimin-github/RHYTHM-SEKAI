@@ -20,6 +20,7 @@ public class fade : MonoBehaviour
     void Start()
 
     {
+        SplashObj.SetActive(true);
         togame.onClick.AddListener(outa);
                     //스크립트 참조된 오브젝트
 
