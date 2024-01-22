@@ -15,7 +15,7 @@ public class MusicManager : MonoBehaviour
 
 
     // 속도 변화에 따른 조절 비율
-    float delayRatio = 25.5f;
+    float delayRatio = 25.3f;
 
     void Start()
     {

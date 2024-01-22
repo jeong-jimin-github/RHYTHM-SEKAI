@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Toucah : MonoBehaviour
 {
+    const float noteBoxHeight = 1.0f;
+    const float tnBoxHeight = 1.0f;
+    const float tnBoxWidth = 0.5f;
     public Text guiTextObject;
     public Text score;
     public Animation aa;
@@ -23,7 +26,7 @@ public class Toucah : MonoBehaviour
     public GameObject sccb;
     void Update()
     {
-       
+
 
         for (int i = 0; i < Input.touchCount; i++)
         {
@@ -40,58 +43,11 @@ public class Toucah : MonoBehaviour
 
                     if (hit.collider.gameObject.tag == "Note" || hit.collider.gameObject.tag == "LongNote" || hit.collider.gameObject.tag == "TN")
                     {
-                        if(hit.collider.gameObject.transform.localPosition.x == -1.5f)
-                        {
-                            one.Play();
-                            CheckNoteInLine(1);
-                           checkTNLine1();
-                        }
-                        if (hit.collider.gameObject.transform.localPosition.x == -0.5f)
-                        {
-                            two.Play();
-                            CheckNoteInLine(2);
-                           
-                        }
-                        if (hit.collider.gameObject.transform.localPosition.x == 0.5f)
-                        {
-                            three.Play();
-                            CheckNoteInLine(3);
-                          
-                        }
-                        if (hit.collider.gameObject.transform.localPosition.x == 1.5f)
-                        {
-                            four.Play();
-                            CheckNoteInLine(4);
-                       
-                        }
+                        HandleNoteHit(hit.collider.gameObject);
                     }
                     else
                     {
-                        int lineIndex = int.Parse(hit.collider.gameObject.name);
-                        if (lineIndex == 1)
-                        {
-                            one.Play();
-                            CheckNoteInLine(1);
-                        
-                        }
-                        if (lineIndex == 2)
-                        {
-                            two.Play();
-                            CheckNoteInLine(2);
-                       
-                        }
-                        if (lineIndex == 3)
-                        {
-                            three.Play();
-                            CheckNoteInLine(3);
-                      
-                        }
-                        if (lineIndex == 4)
-                        {
-                            four.Play();
-                            CheckNoteInLine(4);
-                     
-                        }
+                        HandleLineHit(int.Parse(hit.collider.gameObject.name));
                     }
                 }
                 else
@@ -99,7 +55,7 @@ public class Toucah : MonoBehaviour
                     Debug.Log("No object was hit.");
                 }
             }
-                Ray raya = Camera.main.ScreenPointToRay(touch.position);
+            Ray raya = Camera.main.ScreenPointToRay(touch.position);
                 RaycastHit hita;
 
                 if (Physics.Raycast(raya, out hita))
@@ -249,19 +205,44 @@ public class Toucah : MonoBehaviour
             }
         }
     }
+    void HandleNoteHit(GameObject noteObject)
+    {
+        float noteX = noteObject.transform.localPosition.x;
+
+        if (noteX == -1.5f) { one.Play(); CheckNoteInLine(1); checkTNLine1(); }
+        else if (noteX == -0.5f) { two.Play(); CheckNoteInLine(2); checkTNLine2(); }
+        else if (noteX == 0.5f) { three.Play(); CheckNoteInLine(3); checkTNLine3(); }
+        else if (noteX == 1.5f) { four.Play(); CheckNoteInLine(4); checkTNLine4(); }
+    }
+
+    void HandleLineHit(int lineIndex)
+    {
+        if (lineIndex >= 1 && lineIndex <= 4)
+        {
+            Animation lineAnimation = null;
+
+            switch (lineIndex)
+            {
+                case 1: lineAnimation = one; break;
+                case 2: lineAnimation = two; break;
+                case 3: lineAnimation = three; break;
+                case 4: lineAnimation = four; break;
+            }
+
+            lineAnimation?.Play();
+            CheckNoteInLine(lineIndex);
+        }
+    }
+
     void CheckNoteInLine(int lineIndex)
     {
         float lineX = (lineIndex - 2.5f) * 1.0f;
-        float lineY = 0f;
 
-        Vector3 boxCenter = new Vector3(lineX, lineY, 0f);
-        Vector3 boxSizePerfect = new Vector3(0.5f, 1f, 1f);
-        Vector3 boxSizeGreat = new Vector3(0.5f, 1.5f, 1f);
-        Vector3 boxSizeGood = new Vector3(0.5f, 3f, 1f);
+        // ... (이전 코드 부분 생략)
 
-        Collider[] collidersInBoxPerfect = Physics.OverlapBox(boxCenter, boxSizePerfect);
-        Collider[] collidersInBoxGreat = Physics.OverlapBox(boxCenter, boxSizeGreat);
-        Collider[] collidersInBoxGood = Physics.OverlapBox(boxCenter, boxSizeGood);
+        Collider[] collidersInBoxPerfect = Physics.OverlapBox(new Vector3(lineX, 0f, 0f), new Vector3(0.5f, noteBoxHeight, 1f));
+        Collider[] collidersInBoxGreat = Physics.OverlapBox(new Vector3(lineX, 0f, 0f), new Vector3(0.5f, 1.5f, 1f));
+        Collider[] collidersInBoxGood = Physics.OverlapBox(new Vector3(lineX, 0f, 0f), new Vector3(0.5f, 3f, 1f));
 
         if (CheckCollidersAndScore(collidersInBoxPerfect, 300))
         {
@@ -277,13 +258,35 @@ public class Toucah : MonoBehaviour
         }
         else
         {
-            // 터치하지 못했을 경우 콤보 초기화
             comboCount = 0;
         }
 
         UpdateMaxCombo();
     }
 
+    void checkTNLine(int lineIndex)
+    {
+        float tnX = (lineIndex - 2.5f) * 1.0f;
+        Vector3 bc = new Vector3(tnX, 0, 0f);
+        Vector3 boxtn = new Vector3(tnBoxWidth, tnBoxHeight, 1f);
+
+        Collider[] tn = Physics.OverlapBox(bc, boxtn);
+
+        foreach (Collider collider in tn)
+        {
+            if (collider.gameObject.tag == "TN")
+            {
+                NoteController noteController = collider.gameObject.GetComponent<NoteController>();
+
+                if (noteController != null && noteController.isActive)
+                {
+                    noteController.DeactivateNote();
+                    Debug.Log("Object in the box: " + collider.gameObject.name);
+                    perfect();
+                }
+            }
+        }
+    }
     bool CheckCollidersAndScore(Collider[] colliders, int scoreValue)
     {
         foreach (Collider collider in colliders)

@@ -22,7 +22,13 @@ public class bsud : MonoBehaviour
     }
     void down()
     {
-        bes.text = (Int32.Parse(bes.text) - 1).ToString();
+        if (Int32.Parse(bes.text) <= 15)
+        {
+        }
+        else
+        {
+            bes.text = (Int32.Parse(bes.text) - 1).ToString();
+        }
     }
     // Update is called once per frame
     void Update()
