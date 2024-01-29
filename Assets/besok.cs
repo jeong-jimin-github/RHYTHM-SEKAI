@@ -7,13 +7,10 @@ using UnityEngine.UI;
 public class besok : MonoBehaviour
 {
     public int bsesok;
+    public float offset;
     Text besoktext;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    Text offt;
+    
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene(); 
@@ -21,6 +18,11 @@ public class besok : MonoBehaviour
         {
             besoktext = GameObject.Find("besoka").GetComponent<Text>();
             bsesok = Int32.Parse(besoktext.text);
+        }
+        if(scene.name == "Setting")
+        {
+            offt = GameObject.Find("off").GetComponent<Text>();
+            offset = float.Parse(offt.text);
         }
     }
 

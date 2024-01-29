@@ -14,7 +14,7 @@ public class MusicManager : MonoBehaviour
 
 
 
-    // ¼Óµµ º¯È­¿¡ µû¸¥ Á¶Àý ºñÀ²
+    // ï¿½Óµï¿½ ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     float delayRatio = 25.8f;
 
     void Start()
@@ -24,11 +24,12 @@ public class MusicManager : MonoBehaviour
         audioPlayer = GetComponent<LocalAudioPlayer>();
         audioPlayer.AddSound(clip);
 
-        // ³ëÆ®ÀÇ ¼Óµµ¸¦ °¡Á®¿Í¼­ ³ë·¡ ½ÃÀÛ ½Ã°£À» °è»ê
+        // ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ ï¿½ë·¡ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
         float speed = GameObject.Find("besok").GetComponent<besok>().bsesok;
+        float offset = GameObject.Find("besok").GetComponent<besok>().offset;
         float delay = delayRatio / speed;
 
-        audioPlayer.PlayDelayed("Music", delay);
+        audioPlayer.PlayDelayed("Music", delay + offset);
     }
 
     void Update()
