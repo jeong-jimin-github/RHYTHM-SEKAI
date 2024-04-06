@@ -754,12 +754,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec68ee7b4655a1e44b1ade8464f1d45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\uB0B4\uC77C\uC758\uBC24\uD558\uB298\uCD08\uACC4\uBC18": {fileID: 745768501}
-  "\uD558\uCE20\uB124\uBBF8\uCFE0\uC758\uC18C\uC2E4": {fileID: 229847342}
+  AsunoYozoraShoukaihan: {fileID: 745768501}
+  HatsuneMikunoShoushitsu: {fileID: 229847342}
   Unwelcome_School: {fileID: 1465708745}
-  "\uB0B4\uC77C\uC758\uBC24\uD558\uB298\uCD08\uACC4\uBC18\uC544\uD2B8": {fileID: 21300000, guid: d7f30686e57b0ef428b98ff94fae1fcf, type: 3}
-  "\uD558\uCE20\uB124\uBBF8\uCFE0\uC758\uC18C\uC2E4\uC544\uD2B8": {fileID: 21300000, guid: 7222a72c5bb27734ebeb932e0ecfa482, type: 3}
-  "Unwelcome_School\uC544\uD2B8": {fileID: 21300000, guid: 16501e9a07b53ac438ce14e4d46806ba, type: 3}
+  AsunoYozoraShoukaihanArt: {fileID: 21300000, guid: d7f30686e57b0ef428b98ff94fae1fcf, type: 3}
+  HatsuneMikunoShoushitsuArt: {fileID: 21300000, guid: 7222a72c5bb27734ebeb932e0ecfa482, type: 3}
+  Unwelcome_SchoolArt: {fileID: 21300000, guid: 16501e9a07b53ac438ce14e4d46806ba, type: 3}
   image: {fileID: 1470363552}
   title: {fileID: 24569403}
   auther: {fileID: 1132317595}

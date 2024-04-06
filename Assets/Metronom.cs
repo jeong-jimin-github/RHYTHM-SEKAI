@@ -52,7 +52,7 @@ public class Metronome : MonoBehaviour
                 touchCount++;
 
                 // Calculate and print average offset
-                float averageOffset = totalOffset / touchCount - 0.4f;
+                float averageOffset = totalOffset / touchCount - 0.35f;
                 Debug.Log("Average offset from beat: " + averageOffset.ToString("F3") + " seconds");
                 offsetText.text = averageOffset.ToString("F3");
 
