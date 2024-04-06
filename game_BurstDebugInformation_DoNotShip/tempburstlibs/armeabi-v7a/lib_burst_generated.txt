@@ -1,4 +1,4 @@
-Library: C:\Users\jm\Documents\RHYTHM-SEKAI-main\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
+Library: C:\Users\kuuha\Downloads\RHYTHM-SEKAI-master (1)\RHYTHM-SEKAI-master\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
 --platform=Android
 --backend=burst-llvm-16
 --target=ARMV7A_NEON32
@@ -24,10 +24,10 @@ Library: C:\Users\jm\Documents\RHYTHM-SEKAI-main\Temp\BurstOutput\tempburstlibs\
 --assembly-defines=Unity.Postprocessing.Runtime;
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Users\jm\Documents\RHYTHM-SEKAI-main\Temp\Burst
+--temp-folder=C:\Users\kuuha\Downloads\RHYTHM-SEKAI-master (1)\RHYTHM-SEKAI-master\Temp\Burst
 --key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer
---decode-folder=C:\Users\jm\Documents\RHYTHM-SEKAI-main\Library\Burst
---output=C:\Users\jm\Documents\RHYTHM-SEKAI-main\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
+--decode-folder=C:\Users\kuuha\Downloads\RHYTHM-SEKAI-master (1)\RHYTHM-SEKAI-master\Library\Burst
+--output=C:\Users\kuuha\Downloads\RHYTHM-SEKAI-master (1)\RHYTHM-SEKAI-master\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10

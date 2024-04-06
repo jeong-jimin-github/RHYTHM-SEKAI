@@ -1,48 +1,59 @@
-using AudUnity;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using System.Collections;
+using UnityEngine.Networking;
 public class MusicManager : MonoBehaviour
 {
-    public SoundData clip;
-    public LocalAudioPlayer audioPlayer;
-    public bool isstart = false;
-    float timer;
-    int a = 0;
-    float start;
-
-
-
-    // ï¿½Óµï¿½ ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
-    float delayRatio = 25.8f;
-
+    int i = 0;
+    public GameObject timer;
+    public AudioClip clip;
+    public AudioSource audioPlayer;
+    float offset;
     void Start()
     {
-        timer = 0.0f;
-        start = 1f;
-        audioPlayer = GetComponent<LocalAudioPlayer>();
-        audioPlayer.AddSound(clip);
-
-        // ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Óµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ ï¿½ë·¡ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
-        float speed = GameObject.Find("besok").GetComponent<besok>().bsesok;
-        float offset = GameObject.Find("besok").GetComponent<besok>().offset;
-        float delay = delayRatio / speed;
-
-        audioPlayer.PlayDelayed("Music", delay + offset);
+        offset = (float) 30 / PlayerPrefs.GetInt("Speed");
+        print(offset);
+        StartCoroutine("TestUnityWebRequest");
     }
 
-    void Update()
-    {
-        if (a == 0)
-        {
-            timer += Time.deltaTime;
 
-            if (timer > start)
+
+    IEnumerator TestUnityWebRequest()
+    {
+        string path = "file://" + Application.persistentDataPath + "/" + PlayerPrefs.GetString("Song") + ".wav";
+
+        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, UnityEngine.AudioType.WAV))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
             {
-                isstart = true;
-                a++;
+                clip = DownloadHandlerAudioClip.GetContent(www);
+                audioPlayer.clip = clip;
+                // ¿©±â¿¡¼­ AudioClipÀ» »ç¿ëÇÏ°Å³ª ÀúÀåÇÒ ¼ö ÀÖ½À´Ï´Ù.
             }
+            else
+            {
+                Debug.LogError("UnityWebRequest failed: " + www.error);
+            }
+        }
+    }
+
+
+    private void Update()
+    {
+
+        if (timer.GetComponent<timer>().start == true)
+        {
+            if (i == 0)
+            {
+                //dealyed start
+                audioPlayer.PlayDelayed(offset);
+                i++;
+            }
+        }
+        if(audioPlayer.time >= audioPlayer.clip.length - 1)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Result");
         }
     }
 }

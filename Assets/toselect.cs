@@ -16,7 +16,7 @@ public class toselect : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            SceneManager.LoadScene("Select");
+            SceneManager.LoadScene("DL");
         }
 
         }

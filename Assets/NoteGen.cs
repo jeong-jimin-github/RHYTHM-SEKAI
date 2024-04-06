@@ -1,107 +1,116 @@
+ï»¿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+
+[Serializable]
+public class Data
+{
+    public string name;
+    public int maxBlock;
+    public int BPM;
+    public int offset;
+    public Note[] notes;
+}
+
+[Serializable]
+public class Note
+{
+    public int type;
+    public int num;
+    public int block;
+    public int LPB;
+    public Note[] notes;
+}
+
 public class NoteGen : MonoBehaviour
 {
-    float musicBPM = 185;
-    float stdBPM = 60;
-    float musicTempo = 2f;
-    float stdTempo = 4f;
-    float tikTime;
-    float nextTime;
-    public GameObject GM;
-    public GameObject note;
-    public GameObject lonen;
-    public GameObject tn;
-    string maptxt;
-    int currentIndex = 0;
-    public GameObject deru;
-    private float time;
-    public GameObject MusicM;
-    public AudioClip aa;
+    int BPM;
+    float offset;
+    public GameObject timer;
+    int garim = 30;
+    public int noteNum;
+    private string songName;
+    public GameObject MetronomePrefab;
+     public AudioSource clip;
+    int i = 0;
+    public List<int> LaneNum = new List<int>();
+    public List<int> NoteType = new List<int>();
+    public List<float> NotesTime = new List<float>();
+    public List<GameObject> NotesObj = new List<GameObject>();
+    public Material lineMaterial; // Line Rendererì— ì‚¬ìš©í•  ë¨¸í‹°ë¦¬ì–¼ ì¶”ê°€
+
+    [SerializeField] private float NotesSpeed;
+    [SerializeField] GameObject noteObj;
+    [SerializeField] GameObject RNotePrefab; // RNote í”„ë¦¬íŒ¹ ì¶”ê°€
+
     void Start()
     {
-        tikTime = 0f;
-        nextTime = 0f;
-        maptxt = Resources.Load<TextAsset>("Map/Map01").text;
+        NotesSpeed = PlayerPrefs.GetInt("Speed");
+        noteNum = 0;
+        songName = PlayerPrefs.GetString("Song");
+        Load(songName);
+   
     }
 
-    void Gen(int type, int line, int end)
+    private void Load(string SongName)
     {
-        if (line == 0)
-            return;
-
-        for (int i = 0; i < line.ToString().Length; i++)
+        //webì—ì„œ json ê°€ì ¸ì™€ì„œ ì½ê¸°
+        string inputString = System.IO.File.ReadAllText(Application.persistentDataPath + "/" + SongName + ".json");
+        Data inputJson = JsonUtility.FromJson<Data>(inputString);
+        
+        BPM = inputJson.BPM;
+        offset = inputJson.offset / 10000;
+        noteNum = inputJson.notes.Length;
+        for (int i = 0; i < inputJson.notes.Length; i++)
         {
-            int lineDigit = int.Parse(line.ToString()[i].ToString());
-            InstantiateNoteObject(type, lineDigit, end);
-        }
-    }
+            float kankaku = 60 / (inputJson.BPM * (float)inputJson.notes[i].LPB);
+            float beatSec = kankaku * (float)inputJson.notes[i].LPB;
+            float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset / 10000 + PlayerPrefs.GetFloat("Offset");
 
-    void InstantiateNoteObject(int type, int lineDigit, int end)
-    {
-        float note_x = (lineDigit - 2.5f) * 1.0f;
-
-        if (type == 1)
-        {
-            // ÀÏ¹İ ³ëÆ® »ı¼º ¹× Ãß°¡ ·ÎÁ÷
-            GameObject newNote = Instantiate(note, new Vector3(note_x, 30), Quaternion.identity);
-            // Ãß°¡ ·ÎÁ÷...
-        }
-        else if (type == 2)
-        {
-            // ·Õ³ëÆ® »ı¼º ¹× Ãß°¡ ·ÎÁ÷
-            // ¿©±â¼­ endTimeÀ» ¼³Á¤ÇÏ°Å³ª, ´Ù¸¥ Á¶ÀÛÀ» ¼öÇàÇÒ ¼ö ÀÖ½À´Ï´Ù.
-            int endoff = GameObject.Find("besok").GetComponent<besok>().bsesok / 15;
-            GameObject newNote = Instantiate(note, new Vector3(note_x, 30), Quaternion.identity);
-            GameObject longNoteTailObject = Instantiate(lonen, new Vector3(note_x, 30), Quaternion.identity);
-            longNoteTailObject.transform.parent = newNote.transform;
-            longNoteTailObject.transform.localPosition = new Vector3(0f, end * endoff * 1.8f, 0f);
-            longNoteTailObject.transform.localScale = new Vector3(0.5f, end * endoff, 1f);
-            for (int i = 1; i <= end; i+=2) {
-                GameObject longNote = Instantiate(tn, new Vector3(note_x, 30), Quaternion.identity);
-                longNote.transform.parent = newNote.transform;
-                longNote.transform.localPosition = new Vector3(0f, i * endoff * 3.5f, 0f);
-            }
-            // Ãß°¡ ·ÎÁ÷...
-        }
-    }
-
-    void Update()
-    {
-
-            tikTime = (stdBPM / musicBPM) * (musicTempo / stdTempo);
-            nextTime += Time.deltaTime;
-
-        if (nextTime > tikTime)
-        {
-            if (MusicM.GetComponent<MusicManager>().isstart == true)
+            if (inputJson.notes[i].type == 1) // ì¼ë°˜ ë…¸íŠ¸ ìƒì„±
             {
-                if (currentIndex < maptxt.Split("\n").Length)
+                NotesTime.Add(time);
+                LaneNum.Add(inputJson.notes[i].block);
+                NoteType.Add(inputJson.notes[i].type);
+
+                float z = NotesTime[i] * NotesSpeed + garim;
+                NotesObj.Add(Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, z, 0), Quaternion.identity));
+            }
+            else if (inputJson.notes[i].type == 2) // ë¡±ë…¸íŠ¸ ìƒì„±
+            {
+                NotesTime.Add(time);
+                LaneNum.Add(inputJson.notes[i].block);
+                NoteType.Add(inputJson.notes[i].type);
+
+                float z = NotesTime[i] * NotesSpeed + garim;
+                GameObject rNote = Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, z, 0), Quaternion.identity);
+                NotesObj.Add(rNote);
+
+                LineRenderer lineRenderer = rNote.AddComponent<LineRenderer>();
+                lineRenderer.material = lineMaterial; // ë¨¸í‹°ë¦¬ì–¼ í• ë‹¹
+                lineRenderer.startWidth = 0.3f; // ê°€ë¡œ ë‘ê»˜ ì¡°ì ˆ
+                lineRenderer.endWidth = 0.3f; // ê°€ë¡œ ë‘ê»˜ ì¡°ì ˆ
+
+                // rNote ì•„ë˜ì— í‘œì‹œë˜ë„ë¡ ì„¤ì •
+                lineRenderer.alignment = LineAlignment.View;
+
+                List<Vector3> positions = new List<Vector3>();
+                positions.Add(rNote.transform.position);
+                for (int a = 0; a < inputJson.notes[i].notes.Length; a++)
                 {
-                    string mapLine = maptxt.Split("\n")[currentIndex];
+                    float timea = (beatSec * inputJson.notes[i].notes[a].num / (float)inputJson.notes[i].notes[a].LPB) + inputJson.offset / 10000 + PlayerPrefs.GetFloat("Offset");
+                    float zz = timea * NotesSpeed + garim;
+                    GameObject rNoteChild = Instantiate(RNotePrefab, new Vector3(inputJson.notes[i].notes[a].block - 1.5f, zz, 0), Quaternion.identity);
+                    NotesObj.Add(rNoteChild);
 
-                    if (mapLine.StartsWith("!"))
-                    {
-                        // Handle special cases (if needed)
-                    }
-                    else
-                    {
-                        int type = int.Parse(mapLine.Replace(" ", "").Split(",")[0]);
-                        int line = int.Parse(mapLine.Replace(" ", "").Split(",")[1]);
-                        int end = int.Parse(mapLine.Replace(" ", "").Split(",")[2]);
-                        Gen(type, line, end);
-                    }
-                    currentIndex++;
+                    positions.Add(rNoteChild.transform.position);
                 }
-
-               
+                lineRenderer.positionCount = positions.Count;
+                lineRenderer.SetPositions(positions.ToArray());
             }
-            nextTime -= tikTime;
         }
-            time += Time.deltaTime;
-            if (time > aa.length)
-            {
-            deru.GetComponent<dg>().gotogame();
-            }
+
     }
 }
