@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class SelectManager : MonoBehaviour
 {
-    public Button ³»ÀÏÀÇ¹ãÇÏ´ÃÃÊ°è¹İ;
-    public Button ÇÏÃ÷³×¹ÌÄíÀÇ¼Ò½Ç;
+    public Button AsunoYozoraShoukaihan;
+    public Button HatsuneMikunoShoushitsu;
     public Button Unwelcome_School;
-    public Sprite ³»ÀÏÀÇ¹ãÇÏ´ÃÃÊ°è¹İ¾ÆÆ®;
-    public Sprite ÇÏÃ÷³×¹ÌÄíÀÇ¼Ò½Ç¾ÆÆ®;
-    public Sprite Unwelcome_School¾ÆÆ®;
+    public Sprite AsunoYozoraShoukaihanArt;
+    public Sprite HatsuneMikunoShoushitsuArt;
+    public Sprite Unwelcome_SchoolArt;
     public Image image;
     public Text title;
     public Text auther;
@@ -21,8 +21,8 @@ public class SelectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ³»ÀÏÀÇ¹ãÇÏ´ÃÃÊ°è¹İ.onClick.AddListener(asu);
-        ÇÏÃ÷³×¹ÌÄíÀÇ¼Ò½Ç.onClick.AddListener(shousitu);
+    	AsunoYozoraShoukaihan.onClick.AddListener(asu);
+        HatsuneMikunoShoushitsu.onClick.AddListener(shousitu);
         Unwelcome_School.onClick.AddListener(unwelcome);
         if(PlayerPrefs.GetString("Song") == "«¢«¹«Î«è«¾«éôúÌüÚì") asu();
         else if (PlayerPrefs.GetString("Song") == "ôøëå«ß«¯ªÎá¼ã÷") shousitu();
@@ -32,7 +32,7 @@ public class SelectManager : MonoBehaviour
     void asu()
     {
         SaveSelect("«¢«¹«Î«è«¾«éôúÌüÚì");
-        image.sprite = ³»ÀÏÀÇ¹ãÇÏ´ÃÃÊ°è¹İ¾ÆÆ®;
+        image.sprite = AsunoYozoraShoukaihanArt;
         title.text = "«¢«¹«Î«è«¾«éôúÌüÚì";
         auther.text = "Orangestar";
         bpm.text = "BPM 185";
@@ -42,7 +42,7 @@ public class SelectManager : MonoBehaviour
     void shousitu()
     {
         SaveSelect("ôøëå«ß«¯ªÎá¼ã÷");
-        image.sprite = ÇÏÃ÷³×¹ÌÄíÀÇ¼Ò½Ç¾ÆÆ®;
+        image.sprite = HatsuneMikunoShoushitsuArt;
         title.text = "ôøëå«ß«¯ªÎá¼ã÷";
         auther.text = "cosMo@øìñËp";
         bpm.text = "BPM 240";
@@ -51,7 +51,7 @@ public class SelectManager : MonoBehaviour
     void unwelcome()
     {
         SaveSelect("Unwelcome School");
-        image.sprite = Unwelcome_School¾ÆÆ®;
+        image.sprite = Unwelcome_SchoolArt;
         title.text = "Unwelcome School";
         auther.text = "Blue Archive OST";
         bpm.text = "BPM 180";
