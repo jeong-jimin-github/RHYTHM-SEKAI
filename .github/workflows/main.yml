@@ -13,14 +13,6 @@ jobs:
         with:
           lfs: true
 
-      # Cache
-      - uses: actions/cache@v3
-        with:
-          path: Library
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
-          restore-keys: |
-            Library-
-
       # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
