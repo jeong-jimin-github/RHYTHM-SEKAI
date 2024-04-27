@@ -18,22 +18,22 @@ public class SelectManager : MonoBehaviour
     public Text bpm;
     public AudioSource audioPlayer;
     AudioClip clip;
-    // Start is called before the first frame update
+    
     void Start()
     {
     	AsunoYozoraShoukaihan.onClick.AddListener(asu);
         HatsuneMikunoShoushitsu.onClick.AddListener(shousitu);
         Unwelcome_School.onClick.AddListener(unwelcome);
-        if(PlayerPrefs.GetString("Song") == "«¢«¹«Î«è«¾«éôúÌüÚì") asu();
-        else if (PlayerPrefs.GetString("Song") == "ôøëå«ß«¯ªÎá¼ã÷") shousitu();
+        if(PlayerPrefs.GetString("Song") == "ã‚¢ã‚¹ãƒãƒ¨ã‚¾ãƒ©å“¨æˆ’ç­") asu();
+        else if (PlayerPrefs.GetString("Song") == "åˆéŸ³ãƒŸã‚¯ã®æ¶ˆå¤±") shousitu();
         else if (PlayerPrefs.GetString("Song") == "Unwelcome School") unwelcome();
         else asu();
     }
     void asu()
     {
-        SaveSelect("«¢«¹«Î«è«¾«éôúÌüÚì");
+        SaveSelect("ã‚¢ã‚¹ãƒãƒ¨ã‚¾ãƒ©å“¨æˆ’ç­");
         image.sprite = AsunoYozoraShoukaihanArt;
-        title.text = "«¢«¹«Î«è«¾«éôúÌüÚì";
+        title.text = "ã‚¢ã‚¹ãƒãƒ¨ã‚¾ãƒ©å“¨æˆ’ç­";
         auther.text = "Orangestar";
         bpm.text = "BPM 185";
         AudioPlay();
@@ -41,10 +41,10 @@ public class SelectManager : MonoBehaviour
     }
     void shousitu()
     {
-        SaveSelect("ôøëå«ß«¯ªÎá¼ã÷");
+        SaveSelect("åˆéŸ³ãƒŸã‚¯ã®æ¶ˆå¤±");
         image.sprite = HatsuneMikunoShoushitsuArt;
-        title.text = "ôøëå«ß«¯ªÎá¼ã÷";
-        auther.text = "cosMo@øìñËp";
+        title.text = "åˆéŸ³ãƒŸã‚¯ã®æ¶ˆå¤±";
+        auther.text = "cosMo@æš´èµ°P";
         bpm.text = "BPM 240";
         AudioPlay();
     }
@@ -71,9 +71,9 @@ PlayerPrefs.Save();
 
     IEnumerator TestUnityWebRequest()
     {
-        string path = "file://" + Application.persistentDataPath + "/" + PlayerPrefs.GetString("Song") + ".wav";
+        string path = "file://" + Application.persistentDataPath + "/" + PlayerPrefs.GetString("Song") + ".mp3";
 
-        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, UnityEngine.AudioType.WAV))
+        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, UnityEngine.AudioType.MPEG))
         {
             yield return www.SendWebRequest();
 
@@ -82,17 +82,11 @@ PlayerPrefs.Save();
                 clip = DownloadHandlerAudioClip.GetContent(www);
                 audioPlayer.clip = clip;
                 audioPlayer.Play();
-                // ¿©±â¿¡¼­ AudioClipÀ» »ç¿ëÇÏ°Å³ª ÀúÀåÇÒ ¼ö ÀÖ½À´Ï´Ù.
             }
             else
             {
                 Debug.LogError("UnityWebRequest failed: " + www.error);
             }
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

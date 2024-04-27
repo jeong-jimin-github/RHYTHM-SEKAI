@@ -28,13 +28,9 @@ public class NoteGen : MonoBehaviour
 {
     int BPM;
     float offset;
-    public GameObject timer;
     int garim = 30;
     public int noteNum;
     private string songName;
-    public GameObject MetronomePrefab;
-     public AudioSource clip;
-    int i = 0;
     public List<int> LaneNum = new List<int>();
     public List<int> NoteType = new List<int>();
     public List<float> NotesTime = new List<float>();

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 65221279}
   - component: {fileID: 65221278}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: BackSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 428979199}
   - component: {fileID: 428979201}
   m_Layer: 5
-  m_Name: "\uD504\uB808\uC784"
+  m_Name: FrameUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,9 +617,8 @@ GameObject:
   - component: {fileID: 566908913}
   - component: {fileID: 566908915}
   - component: {fileID: 566908914}
-  - component: {fileID: 566908916}
   m_Layer: 5
-  m_Name: "\uC18D\uB3C4"
+  m_Name: Speed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,21 +685,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566908912}
   m_CullTransparentMesh: 1
---- !u!114 &566908916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566908912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa1dce599ef41e49a29a26a38e7f8fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sokdo: {fileID: 566908914}
-  plus: {fileID: 2030015631}
-  minus: {fileID: 1768556759}
 --- !u!1 &591867360
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +867,7 @@ GameObject:
   - component: {fileID: 910462724}
   - component: {fileID: 910462723}
   m_Layer: 0
-  m_Name: mdr
+  m_Name: Setting2Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e19844fd46b924798f7ea5962082cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modaoru: {fileID: 65221278}
+  backbutton: {fileID: 0}
 --- !u!4 &910462724
 Transform:
   m_ObjectHideFlags: 0
@@ -930,7 +914,7 @@ GameObject:
   - component: {fileID: 958410817}
   - component: {fileID: 958410816}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: OffsetWizardUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,7 +1114,7 @@ GameObject:
   - component: {fileID: 1033934589}
   - component: {fileID: 1033934588}
   m_Layer: 5
-  m_Name: '-'
+  m_Name: Minus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1153,7 +1137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -240}
+  m_AnchoredPosition: {x: -250, y: -240}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033934588
@@ -1329,7 +1313,7 @@ GameObject:
   - component: {fileID: 1250520458}
   - component: {fileID: 1250520457}
   m_Layer: 5
-  m_Name: "\uC18D\uB3C4"
+  m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1511,7 +1495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250, y: -240}
+  m_AnchoredPosition: {x: 250, y: -240}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360593663
@@ -1607,8 +1591,9 @@ GameObject:
   - component: {fileID: 1378861668}
   - component: {fileID: 1378861670}
   - component: {fileID: 1378861669}
+  - component: {fileID: 1378861671}
   m_Layer: 5
-  m_Name: "\uC18D\uB3C4"
+  m_Name: SpeedUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1678,6 +1663,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378861667}
   m_CullTransparentMesh: 1
+--- !u!114 &1378861671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378861667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa1dce599ef41e49a29a26a38e7f8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {fileID: 566908914}
+  plus: {fileID: 2030015631}
+  minus: {fileID: 1768556759}
 --- !u!1 &1457962909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 1457962912}
   - component: {fileID: 1457962911}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: OffsetWizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1793,7 +1793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -240}
+  m_AnchoredPosition: {x: -250, y: -240}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482855688
@@ -1987,7 +1987,7 @@ GameObject:
   - component: {fileID: 1665308349}
   - component: {fileID: 1665308348}
   m_Layer: 5
-  m_Name: +
+  m_Name: Plus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2010,7 +2010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250, y: -240}
+  m_AnchoredPosition: {x: 250, y: -240}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665308348
@@ -2131,7 +2131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -240}
+  m_AnchoredPosition: {x: -250, y: -240}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718129942
@@ -2229,7 +2229,7 @@ GameObject:
   - component: {fileID: 1768556760}
   - component: {fileID: 1768556759}
   m_Layer: 5
-  m_Name: '-'
+  m_Name: Minus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2252,7 +2252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -240}
+  m_AnchoredPosition: {x: -250, y: -240}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768556759
@@ -2508,7 +2508,7 @@ GameObject:
   - component: {fileID: 1940333932}
   - component: {fileID: 1940333934}
   m_Layer: 5
-  m_Name: "\uC624\uD504\uC14B"
+  m_Name: OffsetUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2590,7 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e8c8f96fb8f272498718a0a8575f7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mabeop: {fileID: 958410816}
+  offsetwizardbutton: {fileID: 958410816}
   text: {fileID: 1250520457}
   plus: {fileID: 1665308348}
   minus: {fileID: 1033934588}
@@ -2754,7 +2754,7 @@ GameObject:
   - component: {fileID: 2030015632}
   - component: {fileID: 2030015631}
   m_Layer: 5
-  m_Name: +
+  m_Name: Plus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2777,7 +2777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250, y: -240}
+  m_AnchoredPosition: {x: 250, y: -240}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030015631
@@ -2898,7 +2898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250, y: -240}
+  m_AnchoredPosition: {x: 250, y: -240}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111678533

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 720660636}
   - component: {fileID: 720660635}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Notice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 766027525}
   - component: {fileID: 766027524}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: UIPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 1201540108}
   - component: {fileID: 1201540107}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Notice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 1757025022}
   - component: {fileID: 1757025021}
   m_Layer: 5
-  m_Name: suu
+  m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

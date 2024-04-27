@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 101721066}
   - component: {fileID: 101721065}
   m_Layer: 5
-  m_Name: "\uACE1 \uC774\uB984"
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 104908057}
   - component: {fileID: 104908056}
   m_Layer: 5
-  m_Name: "\uD37C\uD399"
+  m_Name: Perfect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 709045558}
   - component: {fileID: 709045557}
   m_Layer: 5
-  m_Name: "\uC2A4\uCF54\uC5B4"
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 1297780590}
   - component: {fileID: 1297780589}
   m_Layer: 5
-  m_Name: "\uAD7F (1)"
+  m_Name: GoodInt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 1306272891}
   - component: {fileID: 1306272890}
   m_Layer: 5
-  m_Name: "\uADF8\uB81B"
+  m_Name: Great
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 1323703035}
   - component: {fileID: 1323703034}
   m_Layer: 5
-  m_Name: "\uBBF8\uC2A4"
+  m_Name: Miss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 1410129043}
   - component: {fileID: 1410129042}
   m_Layer: 5
-  m_Name: "\uC2A4\uCF54\uC5B4 (1)"
+  m_Name: ScoreInt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -780,7 +780,7 @@ GameObject:
   - component: {fileID: 1415895938}
   - component: {fileID: 1415895937}
   m_Layer: 5
-  m_Name: "\uAD7F"
+  m_Name: Good
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 1607179861}
   - component: {fileID: 1607179860}
   m_Layer: 5
-  m_Name: "\uADF8\uB81B (1)"
+  m_Name: GreatInt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 1892666086}
   - component: {fileID: 1892666089}
   m_Layer: 5
-  m_Name: BackSelect
+  m_Name: Back2Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007315ac647d16349be64a7bee8357dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bb: {fileID: 1892666086}
+  Result2SelectButton: {fileID: 1892666086}
 --- !u!1 &1897475680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1333,7 @@ GameObject:
   - component: {fileID: 1925657287}
   - component: {fileID: 1925657286}
   m_Layer: 5
-  m_Name: "\uD37C\uD399 (1)"
+  m_Name: PerfectInt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1412,7 +1412,7 @@ GameObject:
   - component: {fileID: 2091288858}
   - component: {fileID: 2091288857}
   m_Layer: 5
-  m_Name: "\uBBF8\uC2A4 (1)"
+  m_Name: MissInt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

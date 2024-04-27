@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 288795854}
   - component: {fileID: 288795853}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: Notice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 722922848}
   - component: {fileID: 722922847}
   m_Layer: 5
-  m_Name: offset
+  m_Name: RecommnadOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 813882610}
   - component: {fileID: 813882609}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: RecommandOffsetUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 1663778418}
   - component: {fileID: 1663778417}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: OffsetWizardUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

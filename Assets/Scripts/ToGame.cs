@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class Back : MonoBehaviour
+
+public class ToGame : MonoBehaviour
 {
-    public Button bb;
+    public Button togame;
     // Start is called before the first frame update
     void Start()
     {
-        bb.onClick.AddListener(backS);
+        togame.onClick.AddListener(game);
     }
 
-    void backS()
-    {
-        SceneManager.LoadScene("Select");
-    }
     // Update is called once per frame
     void Update()
     {
         
+    }
+    void game()
+    {
+        SceneManager.LoadSceneAsync("Game");
     }
 }

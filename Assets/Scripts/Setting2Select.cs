@@ -4,22 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class toGame : MonoBehaviour
+public class Setting2Select : MonoBehaviour
 {
-    public Button togame;
+    public Button backbutton;
     // Start is called before the first frame update
     void Start()
     {
-        togame.onClick.AddListener(game);
+        backbutton.onClick.AddListener(Back2Select);
     }
 
+    void Back2Select()
+    {
+        SceneManager.LoadScene("Select");
+    }
     // Update is called once per frame
     void Update()
     {
         
-    }
-    void game()
-    {
-        SceneManager.LoadSceneAsync("Game");
     }
 }

@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class offset1 : MonoBehaviour
 {
-    public Button mabeop;
+    public Button offsetwizardbutton;
     public Text text;
     public Button plus;
     public Button minus;
-    // Start is called before the first frame update
     void Start()
     {
         if (!PlayerPrefs.HasKey("Offset"))
@@ -19,7 +18,7 @@ public class offset1 : MonoBehaviour
         text.text = PlayerPrefs.GetFloat("Offset").ToString();
         plus.onClick.AddListener(plusOffset);
         minus.onClick.AddListener(minusOffset);
-        mabeop.onClick.AddListener(() => SceneManager.LoadScene("Offset"));
+        offsetwizardbutton.onClick.AddListener(() => SceneManager.LoadScene("Offset"));
     }
 
     void plusOffset()
@@ -32,10 +31,5 @@ public class offset1 : MonoBehaviour
     {
         text.text = (double.Parse(text.text) - 0.01).ToString();
         PlayerPrefs.SetFloat("Offset", float.Parse(text.text));
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
