@@ -10,7 +10,7 @@ public class MusicManager : MonoBehaviour
     float offset;
     void Start()
     {
-        offset = (float) 30 / PlayerPrefs.GetInt("Speed");
+        offset = 0;
         print(offset);
         StartCoroutine("TestUnityWebRequest");
     }

@@ -9,7 +9,7 @@ public class NoteMove : MonoBehaviour
     private void Start()
     {
         NoteSpeed = PlayerPrefs.GetInt("Speed");
-        timer = GameObject.Find("timer");
+        timer = GameObject.Find("Timer");
         lineRenderer = GetComponent<LineRenderer>();
     }
 

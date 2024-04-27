@@ -28,7 +28,7 @@ public class NoteGen : MonoBehaviour
 {
     int BPM;
     float offset;
-    int garim = 30;
+    int garim = 0;
     public int noteNum;
     private string songName;
     public List<int> LaneNum = new List<int>();
@@ -56,13 +56,14 @@ public class NoteGen : MonoBehaviour
         Data inputJson = JsonUtility.FromJson<Data>(inputString);
         
         BPM = inputJson.BPM;
-        offset = inputJson.offset / 10000;
+        offset = (float) inputJson.offset / 100000f;
+        print("Offest: " + offset);
         noteNum = inputJson.notes.Length;
         for (int i = 0; i < inputJson.notes.Length; i++)
         {
             float kankaku = 60 / (inputJson.BPM * (float)inputJson.notes[i].LPB);
             float beatSec = kankaku * (float)inputJson.notes[i].LPB;
-            float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset / 10000 + PlayerPrefs.GetFloat("Offset");
+            float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + offset + PlayerPrefs.GetFloat("Offset");
 
             if (inputJson.notes[i].type == 1)
             {
@@ -94,7 +95,7 @@ public class NoteGen : MonoBehaviour
                 positions.Add(rNote.transform.position);
                 for (int a = 0; a < inputJson.notes[i].notes.Length; a++)
                 {
-                    float timea = (beatSec * inputJson.notes[i].notes[a].num / (float)inputJson.notes[i].notes[a].LPB) + inputJson.offset / 10000 + PlayerPrefs.GetFloat("Offset");
+                    float timea = (beatSec * inputJson.notes[i].notes[a].num / (float)inputJson.notes[i].notes[a].LPB) + offset + PlayerPrefs.GetFloat("Offset");
                     float zz = timea * NotesSpeed + garim;
                     GameObject rNoteChild = Instantiate(RNotePrefab, new Vector3(inputJson.notes[i].notes[a].block - 1.5f, zz, 0), Quaternion.identity);
                     NotesObj.Add(rNoteChild);
