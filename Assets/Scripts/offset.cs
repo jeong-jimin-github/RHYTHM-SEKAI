@@ -16,9 +16,4 @@ public class offset : MonoBehaviour
     {
         SceneManager.LoadScene("Setting");
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

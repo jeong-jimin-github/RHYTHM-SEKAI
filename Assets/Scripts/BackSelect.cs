@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class BackSelect : MonoBehaviour
 {
     public Button modoru;
-    // Start is called before the first frame update
     void Start()
     {
         modoru.onClick.AddListener(select);
@@ -15,11 +14,5 @@ public class BackSelect : MonoBehaviour
     void select()
     {
         SceneManager.LoadScene("Select");
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

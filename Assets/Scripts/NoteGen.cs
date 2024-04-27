@@ -35,11 +35,11 @@ public class NoteGen : MonoBehaviour
     public List<int> NoteType = new List<int>();
     public List<float> NotesTime = new List<float>();
     public List<GameObject> NotesObj = new List<GameObject>();
-    public Material lineMaterial; // Line Renderer에 사용할 머티리얼 추가
+    public Material lineMaterial;
 
     [SerializeField] private float NotesSpeed;
     [SerializeField] GameObject noteObj;
-    [SerializeField] GameObject RNotePrefab; // RNote 프리팹 추가
+    [SerializeField] GameObject RNotePrefab;
 
     void Start()
     {
@@ -52,7 +52,6 @@ public class NoteGen : MonoBehaviour
 
     private void Load(string SongName)
     {
-        //web에서 json 가져와서 읽기
         string inputString = System.IO.File.ReadAllText(Application.persistentDataPath + "/" + SongName + ".json");
         Data inputJson = JsonUtility.FromJson<Data>(inputString);
         
@@ -65,7 +64,7 @@ public class NoteGen : MonoBehaviour
             float beatSec = kankaku * (float)inputJson.notes[i].LPB;
             float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset / 10000 + PlayerPrefs.GetFloat("Offset");
 
-            if (inputJson.notes[i].type == 1) // 일반 노트 생성
+            if (inputJson.notes[i].type == 1)
             {
                 NotesTime.Add(time);
                 LaneNum.Add(inputJson.notes[i].block);
@@ -74,7 +73,7 @@ public class NoteGen : MonoBehaviour
                 float z = NotesTime[i] * NotesSpeed + garim;
                 NotesObj.Add(Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, z, 0), Quaternion.identity));
             }
-            else if (inputJson.notes[i].type == 2) // 롱노트 생성
+            else if (inputJson.notes[i].type == 2)
             {
                 NotesTime.Add(time);
                 LaneNum.Add(inputJson.notes[i].block);
@@ -85,11 +84,10 @@ public class NoteGen : MonoBehaviour
                 NotesObj.Add(rNote);
 
                 LineRenderer lineRenderer = rNote.AddComponent<LineRenderer>();
-                lineRenderer.material = lineMaterial; // 머티리얼 할당
-                lineRenderer.startWidth = 0.3f; // 가로 두께 조절
-                lineRenderer.endWidth = 0.3f; // 가로 두께 조절
+                lineRenderer.material = lineMaterial;
+                lineRenderer.startWidth = 0.3f;
+                lineRenderer.endWidth = 0.3f;
 
-                // rNote 아래에 표시되도록 설정
                 lineRenderer.alignment = LineAlignment.View;
 
                 List<Vector3> positions = new List<Vector3>();

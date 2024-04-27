@@ -11,7 +11,7 @@ public class ResultManager : MonoBehaviour
     public Text Great;
     public Text Good;
     public Text Miss;
-    // Start is called before the first frame update
+
     void Start()
     {
         Song.text = PlayerPrefs.GetString("Song");
@@ -20,11 +20,5 @@ public class ResultManager : MonoBehaviour
         Great.text = PlayerPrefs.GetInt("Great").ToString();
         Good.text = PlayerPrefs.GetInt("Good").ToString();
         Miss.text = PlayerPrefs.GetInt("Miss").ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

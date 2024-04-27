@@ -33,9 +33,4 @@ public class SpeedSetting : MonoBehaviour
             PlayerPrefs.SetInt("Speed", Int32.Parse(speed.text));
         }
     } 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

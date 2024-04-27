@@ -7,7 +7,6 @@ public class frame : MonoBehaviour
 {
     public Button six0;
     public Button ten20;
-    // Start is called before the first frame update
     void Start()
     {
         if(PlayerPrefs.GetInt("Frame") == 60)
@@ -36,10 +35,5 @@ public class frame : MonoBehaviour
         PlayerPrefs.SetInt("Frame", 120);
         ten20.image.color = Color.green;
         six0.image.color = Color.white;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -42,30 +42,23 @@ public class DownloadManager : MonoBehaviour
             DLListItem item = items[i];
             string filePath = Path.Combine(Application.persistentDataPath, item.filename);
             print(filePath);
-            // 로컬에 파일이 이미 존재하는지 확인
             if (File.Exists(filePath))
             {
-                // 로컬 파일의 MD5 해시 계산
                 string localMD5 = CalculateMD5(filePath);
-                print("local" + localMD5 + " server" + item.md5_hash);
-                // 서버에서 받은 파일의 MD5 해시와 비교
                 if (localMD5 != item.md5_hash)
                 {
-                    // MD5 해시가 다른 경우, 파일 다운로드
                     yield return StartCoroutine(DownloadFile(item.category, item.filename, filePath));
                 }
             }
             else
             {
-                // 로컬에 파일이 없는 경우, 파일 다운로드
                 yield return StartCoroutine(DownloadFile(item.category, item.filename, filePath));
             }
 
             statusText.text = $"Downloaded {i + 1}/{items.Length} files";
-            yield return null; // 다음 프레임까지 대기
+            yield return null;
         }
 
-        // 다운로드 완료 후 씬 전환
         panel.SetActive(false);
         if(PlayerPrefs.HasKey("Offset"))
         {

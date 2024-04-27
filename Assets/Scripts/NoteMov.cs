@@ -10,8 +10,6 @@ public class NoteMove : MonoBehaviour
     {
         NoteSpeed = PlayerPrefs.GetInt("Speed");
         timer = GameObject.Find("timer");
-
-        // 라인 렌더러가 있는 경우 참조
         lineRenderer = GetComponent<LineRenderer>();
     }
 
@@ -26,7 +24,6 @@ public class NoteMove : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y - Time.deltaTime * NoteSpeed, 0f);
 
-            // 라인 렌더러가 있는 경우 라인 렌더러도 함께 이동
             if (lineRenderer != null)
             {
                 Vector3[] positions = new Vector3[lineRenderer.positionCount];

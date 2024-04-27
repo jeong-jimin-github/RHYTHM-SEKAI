@@ -29,7 +29,6 @@ public class MusicManager : MonoBehaviour
             {
                 clip = DownloadHandlerAudioClip.GetContent(www);
                 audioPlayer.clip = clip;
-                // 여기에서 AudioClip을 사용하거나 저장할 수 있습니다.
             }
             else
             {
@@ -46,7 +45,6 @@ public class MusicManager : MonoBehaviour
         {
             if (i == 0)
             {
-                //dealyed start
                 audioPlayer.PlayDelayed(offset);
                 i++;
             }

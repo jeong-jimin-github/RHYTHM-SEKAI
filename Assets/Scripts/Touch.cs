@@ -218,7 +218,7 @@ public class Toucah : MonoBehaviour
 
                 if (noteController != null && noteController.isActive)
                 {
-                    noteController.DeactivateNote(); // 상태 변경
+                    noteController.DeactivateNote();
                     Debug.Log("Object in the box: " + collider.gameObject.name);
                     perfect();
                 }
@@ -240,7 +240,7 @@ public class Toucah : MonoBehaviour
 
                 if (noteController != null && noteController.isActive)
                 {
-                    noteController.DeactivateNote(); // 상태 변경
+                    noteController.DeactivateNote();
                     Debug.Log("Object in the box: " + collider.gameObject.name);
                     perfect();
                 }
@@ -262,7 +262,7 @@ public class Toucah : MonoBehaviour
 
                 if (noteController != null && noteController.isActive)
                 {
-                    noteController.DeactivateNote(); // 상태 변경
+                    noteController.DeactivateNote();
                     Debug.Log("Object in the box: " + collider.gameObject.name);
                     perfect();
                 }
@@ -284,7 +284,7 @@ public class Toucah : MonoBehaviour
 
                 if (noteController != null && noteController.isActive)
                 {
-                    noteController.DeactivateNote(); // 상태 변경
+                    noteController.DeactivateNote();
                     Debug.Log("Object in the box: " + collider.gameObject.name);
                     perfect();
                 }
@@ -319,7 +319,6 @@ public class Toucah : MonoBehaviour
         }
         else
         {
-            // 터치하지 못했을 경우 콤보 초기화
             comboCount = 0;
         }
 
@@ -336,7 +335,7 @@ public class Toucah : MonoBehaviour
 
                 if (noteController != null && noteController.isActive)
                 {
-                    noteController.DeactivateNote(); // 상태 변경
+                    noteController.DeactivateNote();
                     Debug.Log("Object in the box: " + collider.gameObject.name);
 
                     if (scoreValue == 300)
@@ -376,8 +375,8 @@ public class Toucah : MonoBehaviour
             if (noteController != null && noteController.isActive)
             {
                 miss();
-                noteController.DeactivateNote(); // 상태 변경
-                comboCount = 0; // 콤보 초기화
+                noteController.DeactivateNote();
+                comboCount = 0;
             }
         }
     }

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Back : MonoBehaviour
 {
     public Button Result2SelectButton;
-    // Start is called before the first frame update
     void Start()
     {
         Result2SelectButton.onClick.AddListener(Back2Select);

@@ -15,7 +15,6 @@ public class Pause : MonoBehaviour
     public VideoPlayer video;
     bool IsPause;
 
-    // Use this for initialization
     void Start()
     {
         pause.onClick.AddListener(pauseclicked);
@@ -25,12 +24,6 @@ public class Pause : MonoBehaviour
         PauseUI.SetActive(false);
         IsPause = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-}
 
     void pauseclicked()
     {

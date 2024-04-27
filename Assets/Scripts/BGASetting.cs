@@ -7,7 +7,6 @@ public class BGA : MonoBehaviour
 {
     public Button O;
     public Button X;
-    // Start is called before the first frame update
     void Start()
     {
         O.onClick.AddListener(oclicked);
@@ -36,10 +35,5 @@ public class BGA : MonoBehaviour
         PlayerPrefs.SetInt("BGA", 0);
         X.image.color = Color.green;
         O.image.color = Color.white;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
