@@ -166,7 +166,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114074981
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: username.TMP_InputField.textViewport
 --- !u!114 &114074982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,53 +188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 1
-  _width: 100
-  _widthOfParent: 1
-  _heightType: 1
-  _height: 19
-  _heightOfParent: 1
-  _depthType: 2
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 0
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 0
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 1
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 1
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 0
-  _paddingRight: 0
-  _paddingTop: 0
-  _paddingBottom: 0
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &114074983
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -245,30 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 183781524}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 68, y: 8, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 68, y: 8, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 68, y: 8, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 136, y: 16, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 136, y: 16, z: 0}
-  TransformPosition: {x: 0, y: 0, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 136, y: 16}
 --- !u!114 &114074984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,13 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9149cac59ce0a48a46b2dd4cbed1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _image: {fileID: 183781533}
-  _lastImageSize: {x: 0, y: 0}
-  _lastPreserveAspect: 0
 --- !u!114 &183781527
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -356,7 +283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: username
 --- !u!114 &183781528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,50 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 0
-  _width: 160
-  _widthOfParent: 1
-  _heightType: 0
-  _height: 32
-  _heightOfParent: 1
-  _depthType: 3
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 160
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 30
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 1
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 1
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 12
-  _paddingRight: 12
-  _paddingTop: 8
-  _paddingBottom: 8
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &183781529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,20 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bcb5ae438b41e3449fdddabaf22c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _direction: 0
-  _wrap: 0
-  _wrapDirection: 3
-  _horizontalAlign: 1
-  _verticalAlign: 1
-  _depthAlign: 1
-  _horizontalInnerAlign: 1
-  _verticalInnerAlign: 1
-  _depthInnerAlign: 1
-  _gapType: 0
-  _gap: 0
-  _wrapGapType: 0
-  _wrapGap: 0
 --- !u!114 &183781530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,10 +319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec33b94226f1c7247a6b3b1036911438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _style: {fileID: 11400000, guid: 1cbc7acced85787458ffe321c59fd4ba, type: 2}
 --- !u!114 &183781531
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -464,30 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 370358903}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 80, y: 16, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 80, y: 16, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 80, y: 16, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 0, y: 0, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 160, y: 32, z: 0}
-  TransformPosition: {x: 0, y: 0, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 160, y: 32}
 --- !u!114 &183781532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,13 +524,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9149cac59ce0a48a46b2dd4cbed1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _image: {fileID: 250774617}
-  _lastImageSize: {x: 0, y: 0}
-  _lastPreserveAspect: 0
 --- !u!114 &250774611
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -697,7 +536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: password
 --- !u!114 &250774612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,50 +548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 0
-  _width: 160
-  _widthOfParent: 1
-  _heightType: 0
-  _height: 32
-  _heightOfParent: 1
-  _depthType: 3
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 160
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 30
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 1
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 1
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 12
-  _paddingRight: 12
-  _paddingTop: 8
-  _paddingBottom: 8
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &250774613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,20 +560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bcb5ae438b41e3449fdddabaf22c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _direction: 0
-  _wrap: 0
-  _wrapDirection: 3
-  _horizontalAlign: 1
-  _verticalAlign: 1
-  _depthAlign: 1
-  _horizontalInnerAlign: 1
-  _verticalInnerAlign: 1
-  _depthInnerAlign: 1
-  _gapType: 0
-  _gap: 0
-  _wrapGapType: 0
-  _wrapGap: 0
 --- !u!114 &250774614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,10 +572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec33b94226f1c7247a6b3b1036911438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _style: {fileID: 11400000, guid: 1cbc7acced85787458ffe321c59fd4ba, type: 2}
 --- !u!114 &250774615
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -805,30 +584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 1459313137}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 80, y: 16, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 80, y: 16, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 80, y: 16, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 0, y: 0, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 160, y: 32, z: 0}
-  TransformPosition: {x: 0, y: 0, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 160, y: 32}
 --- !u!114 &250774616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,53 +847,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 0
-  _width: 192
-  _widthOfParent: 1
-  _heightType: 3
-  _height: 0
-  _heightOfParent: 1
-  _depthType: 3
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 100
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 100
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 8
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 0
-  _paddingRight: 0
-  _paddingTop: 0
-  _paddingBottom: 0
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &370358906
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1148,30 +859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 1055909487}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 40, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 96, y: 16, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 96, y: 16, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 96, y: 16, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 232, y: 160, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 44, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 0, y: 0, z: 0}
-  TransformPosition: {x: 0, y: 44, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 0, y: 0}
 --- !u!114 &370358907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,23 +871,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bcb5ae438b41e3449fdddabaf22c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _direction: 0
-  _wrap: 0
-  _wrapDirection: 3
-  _horizontalAlign: 1
-  _verticalAlign: 1
-  _depthAlign: 1
-  _horizontalInnerAlign: 1
-  _verticalInnerAlign: 1
-  _depthInnerAlign: 1
-  _gapType: 0
-  _gap: 0
-  _wrapGapType: 0
-  _wrapGap: 0
 --- !u!114 &370358908
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1210,7 +883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: username-field
 --- !u!1 &478583360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +924,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478583362
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1262,7 +934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: username.TMP_InputField.placeholder
 --- !u!114 &478583363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,7 +984,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 77455e1b6669556459ccb88190ec5138, type: 3}
-    m_FontSize: 10
+    m_FontSize: 9
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 1
@@ -1367,7 +1038,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689914209
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1377,30 +1048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 1143650823}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 24.825, y: 6, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 24.825, y: 6, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 24.825, y: 6, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 0, y: 0, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 49.65, y: 12, z: 0}
-  TransformPosition: {x: 0, y: 0, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 49.65, y: 12}
 --- !u!114 &689914210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1413,50 +1060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 2
-  _width: 0
-  _widthOfParent: 1
-  _heightType: 2
-  _height: 0
-  _heightOfParent: 1
-  _depthType: 2
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 100
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 100
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 0
-  _paddingRight: 0
-  _paddingTop: 0
-  _paddingBottom: 0
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!222 &689914212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1467,7 +1070,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!114 &689914213
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1477,7 +1080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: signin-text
 --- !u!114 &689914214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,10 +1102,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 11
+    m_FontSize: 10
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1842,7 +1444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec33b94226f1c7247a6b3b1036911438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _style: {fileID: 0}
 --- !u!114 &1143650825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,13 +1456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9149cac59ce0a48a46b2dd4cbed1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _image: {fileID: 1143650834}
-  _lastImageSize: {x: 0, y: 0}
-  _lastPreserveAspect: 0
 --- !u!114 &1143650827
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1871,7 +1468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: signin
 --- !u!114 &1143650828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1884,7 +1480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec33b94226f1c7247a6b3b1036911438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _style: {fileID: 11400000, guid: 1cbc7acced85787458ffe321c59fd4ba, type: 2}
 --- !u!114 &1143650829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,7 +1492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec33b94226f1c7247a6b3b1036911438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _style: {fileID: 11400000, guid: 9e22fea8f581d134ca00e226bd3afbc8, type: 2}
 --- !u!114 &1143650830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1910,50 +1504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 0
-  _width: 96
-  _widthOfParent: 1
-  _heightType: 0
-  _height: 32
-  _heightOfParent: 1
-  _depthType: 3
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 1
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 1
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 20
-  _paddingRight: 20
-  _paddingTop: 10
-  _paddingBottom: 10
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &1143650831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,23 +1516,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bcb5ae438b41e3449fdddabaf22c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _direction: 3
-  _wrap: 0
-  _wrapDirection: 3
-  _horizontalAlign: 1
-  _verticalAlign: 2
-  _depthAlign: 1
-  _horizontalInnerAlign: 1
-  _verticalInnerAlign: 2
-  _depthInnerAlign: 1
-  _gapType: 0
-  _gap: 0
-  _wrapGapType: 0
-  _wrapGap: 0
 --- !u!114 &1143650832
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1992,30 +1528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 1992699031}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 48, y: 16, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 48, y: 16, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 48, y: 16, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 0, y: 0, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 96, y: 32, z: 0}
-  TransformPosition: {x: 0, y: 0, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 96, y: 32}
 --- !u!114 &1143650833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2141,7 +1653,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226290025
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2151,7 +1663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: password.TMP_InputField.textViewport
 --- !u!114 &1226290026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,53 +1675,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 1
-  _width: 100
-  _widthOfParent: 1
-  _heightType: 1
-  _height: 19
-  _heightOfParent: 1
-  _depthType: 2
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 0
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 0
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 1
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 1
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 0
-  _paddingRight: 0
-  _paddingTop: 0
-  _paddingBottom: 0
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &1226290027
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2220,30 +1687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 250774608}
-  SiblingIndex: 0
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 68, y: 8, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 68, y: 8, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 68, y: 8, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 136, y: 16, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 0, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 136, y: 16, z: 0}
-  TransformPosition: {x: 0, y: 0, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 136, y: 16}
 --- !u!114 &1226290028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2598,53 +2041,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 0
-  _width: 192
-  _widthOfParent: 1
-  _heightType: 3
-  _height: 0
-  _heightOfParent: 1
-  _depthType: 3
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 100
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 100
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 0
-  _marginBottom: 8
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 0
-  _paddingRight: 0
-  _paddingTop: 0
-  _paddingBottom: 0
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &1459313140
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2654,30 +2053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 1055909487}
-  SiblingIndex: 1
-  LayoutPosition: {x: 0, y: 0, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 96, y: 16, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 96, y: 16, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 96, y: 16, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 0, y: 0, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: 4, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 0, y: 0, z: 0}
-  TransformPosition: {x: 0, y: 4, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 0, y: 0}
 --- !u!114 &1459313141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2690,23 +2065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bcb5ae438b41e3449fdddabaf22c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _direction: 0
-  _wrap: 0
-  _wrapDirection: 3
-  _horizontalAlign: 1
-  _verticalAlign: 1
-  _depthAlign: 1
-  _horizontalInnerAlign: 1
-  _verticalInnerAlign: 1
-  _depthInnerAlign: 1
-  _gapType: 0
-  _gap: 0
-  _wrapGapType: 0
-  _wrapGap: 0
 --- !u!114 &1459313142
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2716,7 +2077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: password-field
 --- !u!1 &1492961524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,7 +2118,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492961526
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2768,7 +2128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: password.TMP_InputField.placeholder
 --- !u!114 &1492961527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,7 +2178,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 77455e1b6669556459ccb88190ec5138, type: 3}
-    m_FontSize: 10
+    m_FontSize: 9
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 1
@@ -3307,53 +2666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b0da67f6b3c9a4e84ed47af9da4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _widthType: 3
-  _width: 0
-  _widthOfParent: 1
-  _heightType: 3
-  _height: 0
-  _heightOfParent: 1
-  _depthType: 3
-  _depth: 1
-  _depthOfParent: 1
-  _minWidthType: 1
-  _minWidth: 0
-  _minWidthOfParent: 0
-  _minHeightType: 1
-  _minHeight: 0
-  _minHeightOfParent: 0
-  _minDepthType: 0
-  _minDepth: 0
-  _minDepthOfParent: 0
-  _maxWidthType: 0
-  _maxWidth: 100
-  _maxWidthOfParent: 1
-  _maxHeightType: 0
-  _maxHeight: 100
-  _maxHeightOfParent: 1
-  _maxDepthType: 0
-  _maxDepth: 1
-  _maxDepthOfParent: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _scale: {x: 1, y: 1, z: 1}
-  _rotation: {x: 0, y: 0, z: 0, w: 1}
-  _marginLeft: 0
-  _marginRight: 0
-  _marginTop: 8
-  _marginBottom: 0
-  _marginFront: 0
-  _marginBack: 0
-  _paddingLeft: 0
-  _paddingRight: 0
-  _paddingTop: 0
-  _paddingBottom: 0
-  _paddingFront: 0
-  _paddingBack: 0
-  _skipLayout: 0
 --- !u!114 &1992699034
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3363,30 +2678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994c66b6148109b489689ed705d244cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 1055909487}
-  SiblingIndex: 2
-  LayoutPosition: {x: 0, y: -40, z: 0}
-  LayoutRotation: {x: 0, y: 0, z: 0, w: 1}
-  AdapterBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 48, y: 16, z: 0}
-  LayoutBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 48, y: 16, z: 0}
-  RotatedAndScaledBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 48, y: 16, z: 0}
-  ComponentScale: {x: 1, y: 1, z: 1}
-  FillSize: {x: 232, y: 160, z: 0}
-  ShrinkSize: {x: 999999, y: 999999, z: 999999}
-  TargetPosition: {x: 0, y: -44, z: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  TargetScale: {x: 1, y: 1, z: 1}
-  TargetRectSize: {x: 0, y: 0, z: 0}
-  TransformPosition: {x: 0, y: -44, z: 0}
-  TransformRotation: {x: 0, y: 0, z: 0, w: 1}
-  TransformScale: {x: 1, y: 1, z: 1}
-  TransformRectSize: {x: 0, y: 0}
 --- !u!114 &1992699035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3399,23 +2690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bcb5ae438b41e3449fdddabaf22c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _version: 4
-  _direction: 0
-  _wrap: 0
-  _wrapDirection: 3
-  _horizontalAlign: 1
-  _verticalAlign: 2
-  _depthAlign: 1
-  _horizontalInnerAlign: 1
-  _verticalInnerAlign: 2
-  _depthInnerAlign: 1
-  _gapType: 0
-  _gap: 0
-  _wrapGapType: 0
-  _wrapGap: 0
 --- !u!114 &1992699036
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3425,7 +2702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9b1a68d57134e41a26ac415ac1a67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedId: signin-btn
 --- !u!1 &2058781860
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class MusicManager : MonoBehaviour
     float offset;
     void Start()
     {
-        offset = 0;
+        offset = (float)30 / PlayerPrefs.GetInt("Speed");
         print(offset);
         StartCoroutine("TestUnityWebRequest");
     }
@@ -19,9 +19,9 @@ public class MusicManager : MonoBehaviour
 
     IEnumerator TestUnityWebRequest()
     {
-        string path = "file://" + Application.persistentDataPath + "/" + PlayerPrefs.GetString("Song") + ".mp3";
+        string path = "file://" + Application.persistentDataPath + "/" + PlayerPrefs.GetString("Song") + ".wav";
 
-        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, UnityEngine.AudioType.MPEG))
+        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, UnityEngine.AudioType.WAV))
         {
             yield return www.SendWebRequest();
 
